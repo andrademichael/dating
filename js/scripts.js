@@ -1,5 +1,7 @@
 $(document).ready(function(){
   $("form").submit(function(event){
+    $("div").removeClass("has-error");
+    //$(".help-block").text("");
     event.preventDefault();
     var name = $("#nameInput").val();
     var age = parseInt($("#ageInput").val());
@@ -7,6 +9,7 @@ $(document).ready(function(){
     if(!name || !age || !date){
       if(!name){
         $("#nameBox").addClass("has-error");
+        $("#nameHelp").text("Please enter your name");
       }
       if(!age){
         $("#ageBox").addClass("has-error");
