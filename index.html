@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>So you want to date a wizard</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>So you want to date a wizard</h1>
+      <p>Fill out the survey below and our complex proprietary algorithm will calculate which wizard is right for you!</p>
+      <form>
+        <div id="nameBox" class="form-group">
+          <label for="nameInput">Name:</label>
+          <input id="nameInput" class="form-control" type="text">
+        </div>
+        <div id="ageBox" class="form-group">
+          <label for="ageInput">Age:</label>
+          <input id="ageInput" class="form-control" type="number">
+        </div>
+        <label for="idealDate">What is your ideal date?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="idealDate" value="1" id="goodDate">
+            A nice cuppa or a smoke
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="idealDate" value="2" id="evilDate">
+            To see our enemies driven before us.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Wizard me!</button>
+      </form>
+    </div>
+  </body>
+</html>
