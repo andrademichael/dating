@@ -6,7 +6,6 @@ $(document).ready(function(){
     var name = $("#nameInput").val();
     var age = parseInt($("#ageInput").val());
     var date = parseInt($("input:radio[name=idealDate]:checked").val());
-    alert(date);
     if(!name || !age || !date){
       if(!name){
         $("#nameBox").addClass("has-error");
